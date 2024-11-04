@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Econature - Reset Password</title>
+    <link rel="icon" type="image/png" href="assets/eco.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">econature.</div>
+        <div class="nav-links">
+            <a href="#" class="nav-item">HOME</a>
+            <a href="#" class="nav-item">TENTANG KAMI</a>
+            <a href="#" class="nav-item">KONTAK</a>
+            <a href="#" class="nav-item">FITUR</a>
+            <div class="cart-icon">🛒</div>
+            <button class="login-btn">MASUK</button>
+            <button class="register-btn">DAFTAR</button>
+        </div>
+    </nav>
+
+    <div class="reset-container">
+        <div class="reset-box">
+            <h2>Reset Kata Sandi Anda</h2>
+            <p>Kami akan mengirimkan kode ke email untuk mereset kata sandi anda</p>
+            
+            <form id="passwordResetForm">
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" placeholder="Masukkan email">
+                    <button type="button" id="sendCode" class="btn-send">Kirim Kode</button>
+                </div>
+
+                <div class="form-group">
+                    <label for="code">Masukkan Kode</label>
+                    <input type="text" id="code" placeholder="Masukkan kode">
+                </div>
+
+                <div class="form-group">
+                    <label for="newPassword">Kata Sandi Baru</label>
+                    <input type="password" id="newPassword" placeholder="Masukkan kata sandi baru">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Konfirmasi Kata Sandi baru</label>
+                    <input type="password" id="confirmPassword" placeholder="Masukkan ulang kata sandi baru">
+                </div>
+
+                <button type="submit" class="btn-reset">Ganti Kata Sandi</button>
+            </form>
+
+            <p class="login-link">
+                <a href="#">Kembali ke halam login?</a>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
